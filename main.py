@@ -16,7 +16,7 @@ def find_hash(original_hash):
 
     final_words = []
 
-    #Student Activity
+
     for i in word_file:
         flag = False
         temp_word = i.replace('\n', '')
@@ -32,8 +32,7 @@ def find_hash(original_hash):
 
     for elem in permutations(final_words, words):
         hash_elem = " ".join(elem)
-        
-        #Student Activity
+
         if len(hash_elem) != len(anagram):
             continue
         
